@@ -31,7 +31,6 @@ Open = st.checkbox("Open")
 Close = st.checkbox("Close")
 High = st.checkbox("High")
 Low = st.checkbox("Low")
-Dividends = st.checkbox("Dividends")
 Volume = st.checkbox("Volume")
 
 ### st.cache trying to optimize performance but not effectively implemented here!!!
@@ -58,10 +57,7 @@ def call_chart():
         st.write(""" ## Volume""")
         st.line_chart(tickerDf.Volume)
 
-    if Dividends:
-        st.write(""" ## Prices Dividends """)
-        st.line_chart(tickerDf.Dividends)
-
+    
 call_chart()
 
 # Extra recommended stocks.
