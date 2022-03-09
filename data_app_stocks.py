@@ -1,5 +1,5 @@
 
-
+from PIL import Image
 import yfinance as yf
 import streamlit as st
 
@@ -8,6 +8,14 @@ st.write("""
 # Simple Stock Price App
 """)
 
+### IMPORTING image
+image = Image.open('stock.jpg')
+st.image(image, caption = 'stock price image)
+
+### some widgets
+st.sidebar.selectbox('List of stocks', ('AAPL', 'AMZN', 'TSLA', 'META', 'MSFT', 'NFLX'))
+st.sidebar.radio('Industiry types', ('Tech stocks', 'Business stock', 'oil & gas', 'Investing complanies'))
+         
 # following link for more yfinance concepts
 # https://towardsdatascience.com/how-to-get-stock-data-using-python-c0de1df17e75
 
