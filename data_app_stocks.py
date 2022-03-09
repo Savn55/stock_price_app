@@ -10,7 +10,7 @@ st.write("""
 
 ### IMPORTING image
 image = Image.open('stock.jpg')
-st.image(image, caption = 'stock price image)
+st.image(image, caption = 'stock price image')
 
 ### some widgets
 st.sidebar.selectbox('List of stocks', ('AAPL', 'AMZN', 'TSLA', 'META', 'MSFT', 'NFLX'))
